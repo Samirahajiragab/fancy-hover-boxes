@@ -9,12 +9,18 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  width: 100%;
+}
+
 section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
 .hover-box {
+  margin: 0;
+  padding: 0;
   position: relative;
   overflow: hidden;
   text-decoration: none;
@@ -28,8 +34,9 @@ section {
   padding: 1rem;
   margin: 0;
   text-align: center;
-  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+  transition: all .2s linear;
 }
 
 .hover-box:hover h2,
@@ -49,7 +56,7 @@ section {
 }
 
 .hover-box-caption {
-  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
   transition: all .2s linear;
 }
